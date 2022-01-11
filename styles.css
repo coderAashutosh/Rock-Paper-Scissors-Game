@@ -14,7 +14,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: radial-gradient(
       134.34% 134.34% at 50% 0%,
@@ -156,3 +156,96 @@ body{
     display: flex;
     flex-direction: column;
   }
+
+
+/* Responsiveness */
+
+@media(max-width: 1024px){
+  .wrapper{
+    overflow-x: hidden;
+    height: 90%;
+  }
+  .contest{
+    width: 750px;
+  }
+  .contest img {
+    width: 255px;
+    height: 275px;
+  }
+}
+
+@media(max-width: 640px){
+  .wrapper{
+    width: 100%;
+    height: 70%;
+  }
+
+  .contest{
+    width: 520px;
+  }
+  .contest img {
+    width: 205px;
+    height: 225px;
+  }
+
+  .contest h1 {
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .newGame{
+    text-align: center;
+  }
+  .contest .newGame {
+    padding: 12px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .scoreboard{
+    width: 420px;
+    height: 114px;
+  }
+  .hands{
+    width: 456px;
+    height: 430px;
+  }
+}
+
+@media(max-width: 480px){
+  .wrapper{
+    width: 100%;
+    height: 90%;
+  }
+  .scoreboard{
+    width: 420px;
+    height: 114px;
+  }
+  .hands{
+    height: 530px;
+  }
+  .contest{
+    width: 420px;
+  }
+  .contest img {
+    width: 175px;
+    height: 185px;
+  }
+  .contest h1 {
+    color: white;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .contest .newGame {
+    padding: 7px 4px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+}
