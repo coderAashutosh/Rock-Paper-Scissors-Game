@@ -222,7 +222,7 @@ body{
     height: 90%;
   }
   .scoreboard{
-    width: 420px;
+    width: 320px;
     height: 114px;
   }
   .hands{
@@ -237,10 +237,13 @@ body{
   }
   .contest h1 {
     color: white;
-    font-size: 14px;
+    font-size: 8.3px;
     margin-top: 20px;
     margin-bottom: 50px;
     text-align: center;
+  }
+  .newGame{
+    font-size: 14px;
   }
   .contest .newGame {
     padding: 7px 4px;
