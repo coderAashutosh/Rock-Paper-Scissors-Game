@@ -101,6 +101,7 @@ body{
     display: none;
     margin-top: 50px;
     width: 900px;
+    height: 500px;
   }
   
   .contest img {
@@ -122,16 +123,19 @@ body{
   }
   
   .contest .newGame {
-    color: hsl(229, 25%, 31%);
+    color: whitesmoke;
     background-color: white;
     padding: 12px 24px;
     border-radius: 6px;
     cursor: pointer;
     transition: all 0.15s;
+    background: rgb(37,8,205);
+background: linear-gradient(327deg, rgba(37,8,205,1) 37%, rgba(34,108,195,1) 73%, rgba(38,91,214,1) 93%);
   }
   
   .newGame:hover {
-    background: rgb(218, 218, 218);
+    background: rgb(37,8,205);
+background: linear-gradient(327deg, rgba(37,8,205,1) 18%, rgba(34,108,195,1) 51%, rgba(38,91,214,1) 100%);
     transform: translate3d(0px, -2px, 0px);
   }
   
@@ -167,7 +171,13 @@ body{
   }
   .contest{
     width: 750px;
+    height: 650px;
   }
+
+  .decision{
+    margin-top: -180px;
+  }
+
   .contest img {
     width: 255px;
     height: 275px;
@@ -189,7 +199,6 @@ body{
   }
 
   .contest h1 {
-    color: white;
     font-size: 16px;
     margin-top: 20px;
     margin-bottom: 50px;
@@ -214,6 +223,10 @@ body{
     width: 456px;
     height: 430px;
   }
+
+  .score {
+    margin-right: 0px;
+  }
 }
 
 @media(max-width: 480px){
@@ -221,6 +234,11 @@ body{
     width: 100%;
     height: 90%;
   }
+
+.title {
+  margin-left: -20px;
+}
+
   .scoreboard{
     width: 320px;
     height: 114px;
@@ -228,8 +246,14 @@ body{
   .hands{
     height: 530px;
   }
+
   .contest{
     width: 420px;
+    height: 450px;
+  }
+
+  .decision{
+    margin-top: -150px;
   }
   .contest img {
     width: 175px;
@@ -237,8 +261,9 @@ body{
   }
   .contest h1 {
     color: white;
-    font-size: 8.3px;
+    font-size: 8.5px;
     margin-top: 20px;
+    margin-left: -14px;
     margin-bottom: 50px;
     text-align: center;
   }
